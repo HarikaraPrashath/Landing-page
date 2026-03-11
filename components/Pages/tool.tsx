@@ -12,7 +12,7 @@ const techStack = [
 
 const AutoScroller = () => {
   return (
-    <div className="relative overflow-hidden w-full">
+    <div className="relative overflow-hidden w-full mb-10">
       {/* Gradient overlays for smooth fade effect */}
       <div className="absolute left-0 top-0 w-20 h-full  z-10"></div>
       <div className="absolute right-0 top-0 w-20 h-full z-10"></div>

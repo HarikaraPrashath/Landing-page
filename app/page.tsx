@@ -2,6 +2,7 @@ import About from "@/components/Pages/about";
 import { Hero } from "@/components/Pages/hero";
 import AutoScroller from "@/components/Pages/tool";
 import LightPillar from "@/components/Design/bg";
+import Service from "@/components/Pages/service";
 export default function Home() {
   return (
     <main className="relative flex flex-col w-full">
@@ -17,7 +18,7 @@ export default function Home() {
           pillarWidth={5}
           pillarHeight={0.6}
           noiseIntensity={0.8}
-          pillarRotation={176}
+          pillarRotation={36}
           interactive={false}
           mixBlendMode="screen"
           quality="high"
@@ -25,6 +26,7 @@ export default function Home() {
          <div className="relative z-10">
         <Hero />
         <AutoScroller />
+        <Service/>
         <About />
       </div>
 

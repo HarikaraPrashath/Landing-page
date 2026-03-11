@@ -8,50 +8,54 @@ import {
   Clock,
   Heart,
   Star,
-  
 } from "lucide-react"
 
 const About = () => {
+
   const whyBestFeatures = [
     {
       icon: Award,
       title: "Industry Expertise",
-      description: "Over 10+ years of combined experience delivering exceptional results across various industries.",
-      gradient: "from-yellow-500 to-orange-600",
+      description:
+        "Over 10+ years of combined experience delivering exceptional results across various industries.",
+      gradient: "from-yellow-400 to-orange-500",
     },
     {
       icon: Users,
       title: "Dedicated Team",
-      description: "A passionate team of experts committed to your success with 24/7 support and guidance.",
-      gradient: "from-blue-500 to-cyan-600",
+      description:
+        "A passionate team of experts committed to your success with 24/7 support and guidance.",
+      gradient: "from-blue-400 to-cyan-500",
     },
     {
       icon: Target,
       title: "Results-Driven",
-      description: "We focus on measurable outcomes that directly impact your business growth and ROI.",
-      gradient: "from-green-500 to-emerald-600",
+      description:
+        "We focus on measurable outcomes that directly impact your business growth and ROI.",
+      gradient: "from-green-400 to-emerald-500",
     },
     {
       icon: Zap,
       title: "Fast Delivery",
-      description: "Quick turnaround times without compromising quality, getting you to market faster.",
-      gradient: "from-purple-500 to-pink-600",
+      description:
+        "Quick turnaround times without compromising quality, getting you to market faster.",
+      gradient: "from-purple-400 to-pink-500",
     },
     {
       icon: Shield,
       title: "Quality Assurance",
-      description: "Rigorous testing and quality control processes ensure flawless execution every time.",
-      gradient: "from-red-500 to-rose-600",
+      description:
+        "Rigorous testing and quality control processes ensure flawless execution every time.",
+      gradient: "from-red-400 to-rose-500",
     },
     {
       icon: Clock,
       title: "Always Available",
-      description: "Round-the-clock support and maintenance to keep your business running smoothly.",
-      gradient: "from-indigo-500 to-purple-600",
+      description:
+        "Round-the-clock support and maintenance to keep your business running smoothly.",
+      gradient: "from-indigo-400 to-purple-500",
     },
   ]
-
-
 
   const stats = [
     { number: "500+", label: "Projects Completed" },
@@ -61,85 +65,112 @@ const About = () => {
   ]
 
   return (
-    <div className="bg-transparent text-foreground">
-      {/* Hero Section */}
-      <section className="py-20 px-4 md:px-8 max-w-7xl mx-auto">
+    <div className="text-white">
+
+      {/* HERO */}
+      <section className="py-24 px-6 md:px-10 max-w-7xl mx-auto">
+
         <div className="text-center mb-16">
-          <div className=" items-center gap-2 text-xl px-4 py-2 rounded-full font-medium text-blue-700 mb-6">
+
+          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 px-4 py-2 rounded-full text-sm font-medium text-white mb-6">
             <Heart className="w-4 h-4" />
             About Our Company
           </div>
-          <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6 text-gray-300">
+
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">
             We Turn{" "}
-            <span className="bg-linear-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
               Ideas Into Reality
             </span>
           </h1>
-          <p className="text-gray-600 text-lg md:text-xl max-w-4xl mx-auto leading-relaxed mb-12">
-            We&apos;re a passionate team of innovators, designers, and developers dedicated to helping businesses thrive in
-            the digital world. Our mission is to transform your vision into powerful solutions that drive growth and
-            success.
+
+          <p className="text-gray-300 text-lg md:text-xl max-w-4xl mx-auto mb-12">
+            We're a passionate team of innovators, designers, and developers dedicated to helping
+            businesses thrive in the digital world. Our mission is to transform your vision into
+            powerful solutions that drive growth and success.
           </p>
 
-          {/* Stats */}
+
+          {/* STATS */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold bg-linear-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">
+
+                <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-2">
                   {stat.number}
                 </div>
-                <div className="text-gray-600 font-medium">{stat.label}</div>
+
+                <div className="text-gray-400">{stat.label}</div>
+
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Why We Are Best Section */}
-      <section className="py-20 px-4 md:px-8 max-w-7xl mx-auto -mt-17">
+
+
+      {/* WHY CHOOSE US */}
+      <section className="py-24 px-6 md:px-10 max-w-7xl mx-auto">
+
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 bg-linear-to-r from-green-100 to-blue-100 px-4 py-2 rounded-full text-sm font-medium text-green-700 mb-6">
+
+          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 px-4 py-2 rounded-full text-sm font-medium text-white mb-6">
             <Star className="w-4 h-4" />
             Why Choose Us
           </div>
-          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-gray-300">
+
+          <h2 className="text-3xl md:text-5xl font-bold mb-6">
             Why We Are The{" "}
-            <span className="bg-linear-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
               Best Choice
             </span>
           </h2>
-          <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
-            We don&apos;t just deliver projects; we build lasting partnerships. Here&apos;s what sets us apart from the
-            competition and makes us the preferred choice for businesses worldwide.
+
+          <p className="text-gray-300 text-lg max-w-3xl mx-auto">
+            We don't just deliver projects; we build lasting partnerships. Here's what sets us apart
+            from the competition and makes us the preferred choice for businesses worldwide.
           </p>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+        {/* FEATURES GRID */}
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+
           {whyBestFeatures.map((feature, index) => {
             const IconComponent = feature.icon
+
             return (
               <div
                 key={index}
-                className="group relative bg-gray-950 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border border-indigo-950 hover:border-gray-900 hover:-translate-y-2"
+                className="group relative rounded-3xl p-8 border border-white/10 bg-white/5 backdrop-blur-xl transition-all duration-500 hover:-translate-y-3 hover:bg-white/10 hover:border-white/20"
               >
-                <div className="absolute inset-0 bg-linear-to-br from-indigo-950 to-purple-950 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+                
 
                 <div className="relative z-10">
+
                   <div
-                    className={`inline-flex items-center  justify-center w-16 h-16 rounded-2xl bg-linear-to-r ${feature.gradient} mb-6 group-hover:scale-110 transition-transform duration-300`}
+                    className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-r ${feature.gradient} mb-6 group-hover:scale-110 transition`}
                   >
                     <IconComponent className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold mb-4 text-gray-500">{feature.title}</h3>
-                  <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+
+                  <h3 className="text-xl font-bold mb-4 text-white">
+                    {feature.title}
+                  </h3>
+
+                  <p className="text-gray-300 leading-relaxed">
+                    {feature.description}
+                  </p>
+
                 </div>
               </div>
             )
           })}
         </div>
+
       </section>
-
-
 
     </div>
   )
