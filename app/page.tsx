@@ -3,6 +3,10 @@ import { Hero } from "@/components/Pages/hero";
 import AutoScroller from "@/components/Pages/tool";
 import LightPillar from "@/components/Design/bg";
 import Service from "@/components/Pages/service";
+import Team from "@/components/Pages/team";
+import Products from "@/components/Pages/product";
+import Feedback from "@/components/Pages/clientFeedback";
+import Footer from "@/components/Pages/footer";
 export default function Home() {
   return (
     <main className="relative flex flex-col w-full">
@@ -15,10 +19,10 @@ export default function Home() {
           intensity={1}
           rotationSpeed={0.7}
           glowAmount={0.001}
-          pillarWidth={5}
+          pillarWidth={3}
           pillarHeight={0.6}
-          noiseIntensity={0.8}
-          pillarRotation={36}
+          noiseIntensity={0.9}
+          pillarRotation={25}
           interactive={false}
           mixBlendMode="screen"
           quality="high"
@@ -27,7 +31,11 @@ export default function Home() {
         <Hero />
         <AutoScroller />
         <Service/>
+        <Products/>
+        <Feedback/>
         <About />
+        <Team/>
+        <Footer/>
       </div>
 
       </div>
