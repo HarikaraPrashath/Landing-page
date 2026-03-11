@@ -21,7 +21,7 @@ export default function Home() {
           glowAmount={0.001}
           pillarWidth={3}
           pillarHeight={0.6}
-          noiseIntensity={0.9}
+          noiseIntensity={0.1}
           pillarRotation={25}
           interactive={false}
           mixBlendMode="screen"
